@@ -1,6 +1,6 @@
 # Unity Custom Board Game & Engine Framework
 
-A 3D chess-like board game built in Unity, featuring a custom, object-oriented engine framework. This project not only implements the core logic for a turn-based board game (complete with piece validation, timers, and move history) but also abstracts Unity's base components into a streamlined, easy-to-use custom engine API.
+A 3D chess game built in Unity, featuring a custom, object-oriented engine framework. This project not only implements the core logic for a turn-based board game (complete with piece validation, timers, and move history) but also abstracts Unity's base components into a streamlined, easy-to-use custom engine API.
 
 ##  Project Overview
 
@@ -11,7 +11,7 @@ The repository is divided into two main components:
 ##  Features
 
 * **Custom Object Wrappers:** `DvBaseObject` and `UI_Object` classes that simplify instantiation, positioning, rotation, and scaling of 3D and 2D elements without needing to constantly interact with Unity's verbose component system.
-* **Chess-Like Game Logic:** * Includes movement validation for Pawns, Rooks, Knights, Bishops, Queens, and Kings.
+* **Chess Game Logic:** * Includes movement validation for Pawns, Rooks, Knights, Bishops, Queens, and Kings.
     * Turn alignment system (White vs. Black) with an integrated match timer.
     * Move history tracking allowing players to undo moves.
 * **Dynamic Camera Controller:** The camera automatically smoothly transitions to face the board from the perspective of the current player's turn.
@@ -51,7 +51,3 @@ The game is played entirely via the keyboard once in the main scene:
     * `Resources/UI/Fonts/` (For UI text fonts, e.g., Arial)
     * `Resources/Prefabs/` (For custom 3D models if not using primitives)
 4. Open the `MainMenu` scene and press **Play** in the Unity Editor.
-
-## 📝 Notes
-
-This project was built to demonstrate how Unity's component-based architecture can be wrapped into a more traditional Object-Oriented Programming (OOP) hierarchy, hiding the boilerplate code involved with component fetching and physical constraints. Note that the codebase contains several internal comments and variable names in Spanish, but the API and architecture follow standard English naming conventions.
